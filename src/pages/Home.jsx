@@ -9,10 +9,10 @@ import ninja from "../assets/images/logo/ninja.svg";
 import pos from "../assets/images/logo/pos.svg";
 import sicepat from "../assets/images/logo/sicepat.svg";
 import tiki from "../assets/images/logo/tiki.svg";
-import web from "../assets/images/logo/webapp.png";
-import uiux from "../assets/images/logo/uiux.png";
-import design from "../assets/images/logo/design.png";
-import coding from "../assets/images/logo/coding.png";
+import web from "../assets/icons/webapp.png";
+import uiux from "../assets/icons/uiux.png";
+import design from "../assets/icons/design.png";
+import coding from "../assets/icons/coding.png";
 // import wahana from "../assets/images/logo/wahana.svg";
 
 export default function Home() {
