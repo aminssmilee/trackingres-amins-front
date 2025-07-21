@@ -9,7 +9,7 @@ import ninja from "../assets/images/logo/ninja.svg";
 import pos from "../assets/images/logo/pos.svg";
 import sicepat from "../assets/images/logo/sicepat.svg";
 import tiki from "../assets/images/logo/tiki.svg";
-import wahana from "../assets/images/logo/wahana.svg";
+// import wahana from "../assets/images/logo/wahana.svg";
 
 export default function Home() {
   return (
@@ -59,7 +59,7 @@ export default function Home() {
             <img src={pos} alt="Logo Pos Indonesia" className="h-12 object-contain" />
             <img src={sicepat} alt="Logo Sicepat" className="h-12 object-contain" />
             <img src={tiki} alt="Logo Tiki" className="h-12 object-contain" />
-            <img src={wahana} alt="Logo Wahana" className="h-12 object-contain" />
+            {/* <img src={wahana} alt="Logo Wahana" className="h-12 object-contain" /> */}
           </div>
         </div>
       </div>
