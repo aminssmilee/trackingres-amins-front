@@ -1,6 +1,9 @@
 import React from "react";
 import Logo from "../assets/images/logo.png";
-import { Link } from 'react-router-dom';
+import { Link } from "react-router-dom";
+
+import jne from "../assets/images/JNE.png";
+import jnt from "../assets/images/jnt.png";
 
 export default function Home() {
   return (
@@ -43,13 +46,9 @@ export default function Home() {
       <div className="bg-zinc-200">
         <div className="h-[30vh] bg-white flex justify-center items-center px-4 rounded-b-[100px]">
           <div className="flex gap-8">
+            <img src={jne} alt="Logo JNE" className="h-12 object-contain" />
             <img
-              src="/src/assets/images/logo/JNE.svg"
-              alt="Logo JNE"
-              className="h-12 object-contain"
-            />
-            <img
-              src="/src/assets/images/logo/jnt.svg"
+              src={jnt}
               alt="Logo J&T"
               className="h-12 object-contain"
             />
