@@ -1,6 +1,7 @@
 /* eslint-disable no-unused-vars */
 import { useState } from "react";
 import axios from "axios";
+import Logo from "../assets/images/logo.png";
 
 export default function Tracking() {
   const [kurir, setKurir] = useState("jne");
@@ -217,7 +218,7 @@ export default function Tracking() {
       {/* Gambar Truk */}
       <div className="hidden md:block w-1/3">
         <img
-          src="/img/jne-truck.png"
+          src={Logo}
           alt="JNE Truck"
           className="w-full object-contain"
         />
