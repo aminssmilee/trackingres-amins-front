@@ -2,8 +2,9 @@ import React from "react";
 import Logo from "../assets/images/logo.png";
 import { Link } from "react-router-dom";
 
-import jne from "../assets/images/JNE.png";
-import jnt from "../assets/images/jnt.png";
+import jnt from "../assets/images/logo/jnt.svg";
+import jne from "../assets/images/logo/JNE.svg";
+
 
 export default function Home() {
   return (
