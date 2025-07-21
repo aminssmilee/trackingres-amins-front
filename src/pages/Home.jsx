@@ -4,7 +4,12 @@ import { Link } from "react-router-dom";
 
 import jnt from "../assets/images/logo/jnt.svg";
 import jne from "../assets/images/logo/JNE.svg";
-
+import lion from "../assets/images/logo/lion.svg";
+import ninja from "../assets/images/logo/ninja.svg";
+import pos from "../assets/images/logo/pos.svg";
+import sicepat from "../assets/images/logo/sicepat.svg";
+import tiki from "../assets/images/logo/tiki.svg";
+import wahana from "../assets/images/logo/wahana.svg";
 
 export default function Home() {
   return (
@@ -48,11 +53,13 @@ export default function Home() {
         <div className="h-[30vh] bg-white flex justify-center items-center px-4 rounded-b-[100px]">
           <div className="flex gap-8">
             <img src={jne} alt="Logo JNE" className="h-12 object-contain" />
-            <img
-              src={jnt}
-              alt="Logo J&T"
-              className="h-12 object-contain"
-            />
+            <img src={jnt} alt="Logo J&T" className="h-12 object-contain" />
+            <img src={lion} alt="Logo lion prcel" className="h-12 object-contain" />
+            <img src={ninja} alt="Logo Ninja Express" className="h-12 object-contain" />
+            <img src={pos} alt="Logo Pos Indonesia" className="h-12 object-contain" />
+            <img src={sicepat} alt="Logo Sicepat" className="h-12 object-contain" />
+            <img src={tiki} alt="Logo Tiki" className="h-12 object-contain" />
+            <img src={wahana} alt="Logo Wahana" className="h-12 object-contain" />
           </div>
         </div>
       </div>
