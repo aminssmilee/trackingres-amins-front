@@ -9,6 +9,10 @@ import ninja from "../assets/images/logo/ninja.svg";
 import pos from "../assets/images/logo/pos.svg";
 import sicepat from "../assets/images/logo/sicepat.svg";
 import tiki from "../assets/images/logo/tiki.svg";
+import web from "../assets/images/logo/webapp.png";
+import uiux from "../assets/images/logo/uiux.png";
+import design from "../assets/images/logo/design.png";
+import coding from "../assets/images/logo/coding.png";
 // import wahana from "../assets/images/logo/wahana.svg";
 
 export default function Home() {
@@ -85,7 +89,7 @@ export default function Home() {
         <div className="grid grid-cols-1 md:grid-cols-4 gap-10 text-left max-w-6xl mx-auto">
           <div>
             <img
-              src="/src/assets/icons/uiux.png"
+              src={uiux}
               alt="UX & UI Icon"
               className="h-8 mb-4"
             />
@@ -97,7 +101,7 @@ export default function Home() {
           </div>
           <div>
             <img
-              src="src/assets/icons/webapp.png"
+              src={web}
               alt="Web & Mobile App Icon"
               className="h-8 mb-4"
             />
@@ -109,7 +113,7 @@ export default function Home() {
           </div>
           <div>
             <img
-              src="/src/assets/icons/design.png"
+              src={design}
               alt="Design & Creative Icon"
               className="h-8 mb-4"
             />
@@ -121,7 +125,7 @@ export default function Home() {
           </div>
           <div>
             <img
-              src="/src/assets/icons/coding.png"
+              src={coding}
               alt="Development Icon"
               className="h-8 mb-4"
             />
