@@ -6,10 +6,21 @@ export default {
   ],
   theme: {
     extend: {
-       fontFamily: {
-        inter: ["Inter", "sans-serif"],
+      fontFamily: {
+        jakarta: ['"Plus Jakarta Sans"', 'sans-serif'],
+        poppins: ['Poppins', 'sans-serif'],
+        inter: ['Inter', 'sans-serif'],
+        roboto: ['Roboto', 'sans-serif'],
+        montserrat: ['Montserrat', 'sans-serif'],
+        lato: ['Lato', 'sans-serif'],
+        nunito: ['Nunito', 'sans-serif'],
+        bebas: ['"Bebas Neue"', 'cursive'],
+        serif: ['Georgia', 'serif'],
+        mono: ['Menlo', 'monospace'],
       },
     },
   },
   plugins: [],
 }
+
+

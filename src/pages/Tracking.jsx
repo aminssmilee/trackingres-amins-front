@@ -2,6 +2,9 @@
 import { useState } from "react";
 import axios from "axios";
 import Logo from "../assets/images/logo.png";
+import jet from "../assets/images/jet.jpg";
+import truk from "../assets/images/truck.jpg";
+
 
 export default function Tracking() {
   const [kurir, setKurir] = useState("jne");
@@ -55,21 +58,23 @@ export default function Tracking() {
   return (
     <div className="">
       {/* Form Section */}
-      <div></div>
+      <div>
+        {/* <h1 className="font-jakarta text-justify items-center">hai aku font jakarta</h1> */}
+      </div>
       <div className=" ">
-        <div className=" ">
-          <div className="w-full flex flex-col md:flex-row items-center justify-center gap-8 p-6 min-h-screen">
+        <div className="font-jakarta ">
+          <div className="w-full flex bg-gradient-to-r from-red-500 via-red-400 to-red-600 flex-col md:flex-row items-center justify-center gap-8 p-6 min-h-screen font-jakarta">
             {/* Bagian kiri (logo dan judul) */}
-            <div className="w-1/3 flex flex-col items-center justify-center p-5">
+            <div className="w-1/3 flex flex-col  font-jakarta items-center justify-center p-5">
               <img
-                src={Logo}
+                src={truk}
                 alt="JNE Truck"
-                className="w-60 md:w-1/2 object-contain bg-white border-4 border-red-600 rounded-full p-2 shadow-lg"
+                className="w-60 md:w-1/2 object-contain bg-white border-4 border-white rounded-lg shadow-lg"
               />
-              <h1 className="text-3xl  md:text-6xl font-bold text-red-700 mt-4 mb-2">
+              <h1 className="text-3xl md:text-6xl text-white mt-4 mb-2 font-roboto">
                 Pelacakan
               </h1>
-              <p className="text-xs md:text-lg    text-gray-600 text-center">
+              <p className="text-xs md:text-lg font-jakarta text-gray-200 text-center">
                 Masukkan nomor resi pengirimanmu.
               </p>
             </div>
@@ -78,7 +83,7 @@ export default function Tracking() {
             <div className="w-full md:w-auto flex flex-col items-center">
               {/* Pilih Kurir */}
               <div className="mb-4 w-60">
-                <label className="block text-sm font-semibold text-gray-700 mb-1">
+                <label className="block text-sm font-semibold text-gray-200 mb-1">
                   Pilih Kurir
                 </label>
                 <select
@@ -95,7 +100,7 @@ export default function Tracking() {
               </div>
 
               {/* Input Resi */}
-              <div className="bg-white rounded-full px-6 py-3 flex items-center shadow-md w-60 border-2 border-red-500">
+              <div className="bg-white rounded-full  px-6 py-3 flex items-center shadow-md w-60 border-2 border-red-500">
                 <input
                   type="text"
                   placeholder="Ketik Nomor Resi"
@@ -104,7 +109,7 @@ export default function Tracking() {
                   className="flex-grow outline-none text-gray-700 placeholder-gray-400 bg-transparent"
                 />
               </div>
-              <p className="text-sm text-gray-500 mb-4 p-5">
+              <p className="text-sm text-gray-200 mb-4 p-5 font-jakarta">
                 Contoh: JP1234567890
               </p>
 
@@ -123,6 +128,9 @@ export default function Tracking() {
               )}
             </div>
           </div>
+          {/* <div className="justify-center flex flex-col items-center p-5">
+            <img className="w-1/3  " src={jet} alt="" srcset="" />
+          </div> */}
         </div>
 
         {/* Tampilkan Hasil */}
@@ -190,7 +198,7 @@ export default function Tracking() {
                 <h3 className="text-xl font-bold mb-4 text-red-700 flex items-center gap-2">
                   🚚 Detail Pengiriman
                 </h3>
-                <div className="space-y-2 text-sm text-gray-700">
+                <div className="space-y-2 text-sm font-jakarta text-gray-700">
                   <p>
                     <span className="font-semibold">Pengirim:</span>{" "}
                     {hasil.data.detail.shipper}
@@ -216,7 +224,7 @@ export default function Tracking() {
         {/* === Riwayat Perjalanan === */}
         {hasil?.data?.history?.length > 0 && (
           <div className="mt-6 bg-white rounded-lg shadow-md p-6 w-full max-w-3xl mx-auto">
-            <h3 className="text-xl font-bold mb-6 text-red-700 flex items-center gap-2">
+            <h3 className="text-xl font-bold mb-6 font-inter text-red-700 flex items-center gap-2">
               🕓 Riwayat Perjalanan
             </h3>
             <ol className="relative border-l-2 border-red-500 ml-4">

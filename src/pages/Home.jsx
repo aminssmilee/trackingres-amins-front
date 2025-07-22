@@ -58,10 +58,26 @@ export default function Home() {
           <div className="flex gap-8">
             <img src={jne} alt="Logo JNE" className="h-12 object-contain" />
             <img src={jnt} alt="Logo J&T" className="h-12 object-contain" />
-            <img src={lion} alt="Logo lion prcel" className="h-12 object-contain" />
-            <img src={ninja} alt="Logo Ninja Express" className="h-12 object-contain" />
-            <img src={pos} alt="Logo Pos Indonesia" className="h-12 object-contain" />
-            <img src={sicepat} alt="Logo Sicepat" className="h-12 object-contain" />
+            <img
+              src={lion}
+              alt="Logo lion prcel"
+              className="h-12 object-contain"
+            />
+            <img
+              src={ninja}
+              alt="Logo Ninja Express"
+              className="h-12 object-contain"
+            />
+            <img
+              src={pos}
+              alt="Logo Pos Indonesia"
+              className="h-12 object-contain"
+            />
+            <img
+              src={sicepat}
+              alt="Logo Sicepat"
+              className="h-12 object-contain"
+            />
             <img src={tiki} alt="Logo Tiki" className="h-12 object-contain" />
             {/* <img src={wahana} alt="Logo Wahana" className="h-12 object-contain" /> */}
           </div>
@@ -88,11 +104,7 @@ export default function Home() {
 
         <div className="grid grid-cols-1 md:grid-cols-4 gap-10 text-left max-w-6xl mx-auto">
           <div>
-            <img
-              src={uiux}
-              alt="UX & UI Icon"
-              className="h-8 mb-4"
-            />
+            <img src={uiux} alt="UX & UI Icon" className="h-8 mb-4" />
             <h3 className="font-semibold text-gray-800">UX & UI</h3>
             <p className="text-sm text-gray-600">
               Designing interfaces that are intuitive, efficient, and enjoyable
@@ -100,11 +112,7 @@ export default function Home() {
             </p>
           </div>
           <div>
-            <img
-              src={web}
-              alt="Web & Mobile App Icon"
-              className="h-8 mb-4"
-            />
+            <img src={web} alt="Web & Mobile App Icon" className="h-8 mb-4" />
             <h3 className="font-semibold text-gray-800">Web & Mobile App</h3>
             <p className="text-sm text-gray-600">
               Transforming ideas into exceptional web and mobile app
@@ -124,11 +132,7 @@ export default function Home() {
             </p>
           </div>
           <div>
-            <img
-              src={coding}
-              alt="Development Icon"
-              className="h-8 mb-4"
-            />
+            <img src={coding} alt="Development Icon" className="h-8 mb-4" />
             <h3 className="font-semibold text-gray-800">Development</h3>
             <p className="text-sm text-gray-600">
               Bringing your vision to life with the latest technology and design
@@ -192,6 +196,7 @@ export default function Home() {
           </footer>
         </div>
       </div>
+      {/* <p className="font-">Teks Medium 500</p> */}
     </div>
   );
 }
