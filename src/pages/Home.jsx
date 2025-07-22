@@ -24,7 +24,7 @@ export default function Home() {
             <h1 className="text-2xl sm:text-3xl md:text-4xl font-bold text-gray-800 leading-snug text-left">
               <span className="font-semibold text-gray-800">Lacak Paketmu</span>
               <br className="hidden sm:block" />
-              <span className="font-normal text-gray-800">
+              <span className="font-jakarta text-gray-800">
                 {" "}
                 dengan Mudah dan Cepat!
               </span>
@@ -37,7 +37,7 @@ export default function Home() {
             />
           </div>
 
-          <p className="text-sm sm:text-base md:text-lg text-gray-600 leading-relaxed text-left">
+          <p className="text-sm sm:text-base md:text-lg text-gray-600 font-jakarta leading-relaxed text-left">
             Cukup masukkan nomor resi, dan kami akan tunjukkan di mana posisi
             paketmu sekarang.
           </p>
