@@ -89,7 +89,7 @@ export default function Tracking() {
                 <select
                   value={kurir}
                   onChange={(e) => setKurir(e.target.value)}
-                  className="w-full px-4 py-2 border border-red-600 rounded-full focus:outline-none focus:ring-2 focus:ring-red-500"
+                  className="w-full p-5 py-3 border border-red-600 rounded-full focus:outline-none focus:ring-2 focus:ring-red-500"
                 >
                   {kurirList.map((k) => (
                     <option key={k.code} value={k.code}>
