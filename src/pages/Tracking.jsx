@@ -65,7 +65,7 @@ export default function Tracking() {
         <div className="font-jakarta ">
           <div className="w-full flex bg-gradient-to-r from-red-500 via-red-400 to-red-600 flex-col md:flex-row items-center justify-center gap-8 p-6 min-h-screen font-jakarta">
             {/* Bagian kiri (logo dan judul) */}
-            <div className="w-1/3 flex flex-col  font-jakarta items-center justify-center p-5">
+            <div className="w-1/1 flex flex-col  font-jakarta items-center justify-center p-5">
               <img
                 src={truk}
                 alt="JNE Truck"
@@ -82,14 +82,14 @@ export default function Tracking() {
             {/* Bagian kanan (form kurir dan input resi) */}
             <div className="w-full md:w-auto flex flex-col items-center">
               {/* Pilih Kurir */}
-              <div className="mb-4 w-60">
+              <div className="mb-4 w-80">
                 <label className="block text-sm font-semibold text-gray-200 mb-1">
                   Pilih Kurir
                 </label>
                 <select
                   value={kurir}
                   onChange={(e) => setKurir(e.target.value)}
-                  className="w-full px-4 py-2 border border-red-600 rounded-md focus:outline-none focus:ring-2 focus:ring-red-500"
+                  className="w-full px-4 py-2 border border-red-600 rounded-full focus:outline-none focus:ring-2 focus:ring-red-500"
                 >
                   {kurirList.map((k) => (
                     <option key={k.code} value={k.code}>
@@ -100,7 +100,7 @@ export default function Tracking() {
               </div>
 
               {/* Input Resi */}
-              <div className="bg-white rounded-full  px-6 py-3 flex items-center shadow-md w-60 border-2 border-red-500">
+              <div className="bg-white rounded-full  px-6 py-3 flex items-center shadow-md w-80 border-2 border-red-500">
                 <input
                   type="text"
                   placeholder="Ketik Nomor Resi"
@@ -116,7 +116,7 @@ export default function Tracking() {
               <button
                 onClick={handleCekResi}
                 disabled={loading || !resi}
-                className={`bg-red-600 hover:bg-red-700 text-white text-lg font-semibold py-3 px-8 rounded-full transition duration-200 ${
+                className={`bg-red-300 hover:bg-red-700 w-80 text-white text-lg font-semibold py-3 px-8 rounded-full transition duration-200 ${
                   (!resi || loading) && "cursor-not-allowed"
                 }`}
               >
