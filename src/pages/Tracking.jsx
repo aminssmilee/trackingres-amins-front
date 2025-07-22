@@ -69,7 +69,7 @@ export default function Tracking() {
               <img
                 src={truk}
                 alt="JNE Truck"
-                className="w-60 md:w-1/2 object-contain bg-white border-4 border-white rounded-lg shadow-lg"
+                className="w-60 md:w-72 object-contain bg-white border-4 border-white rounded-lg shadow-lg"
               />
               <h1 className="text-3xl md:text-6xl text-white mt-4 mb-2 font-roboto">
                 Pelacakan
